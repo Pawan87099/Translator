@@ -17,3 +17,6 @@ firstly import necessary python modeules:
 12. The 'playsound' library is used to play the 'captured_voice.mp3' file, allowing the user to hear the translated text.
 13. finally the 'captured_voice.mp3' file is deleted using 'os.remove' to clean up the temporary file.
 14. At the end translated text is printed to the console.
+15. Example:-
+16. input:- how are you
+17. output:- आप कैसे हैं
