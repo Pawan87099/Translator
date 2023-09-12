@@ -7,8 +7,7 @@ import os
 
 flag = 0
 
-# A tuple containing all the language and
-# codes of the language will be detcted
+# A tuple containing all the language and codes of the language will be detcted
 dic = ('afrikaans', 'af', 'albanian', 'sq',
        'amharic', 'am', 'arabic', 'ar',
        'armenian', 'hy', 'azerbaijani', 'az',
@@ -58,8 +57,7 @@ dic = ('afrikaans', 'af', 'albanian', 'sq',
        'yo', 'zulu', 'zu')
 
 
-# Capture Voice
-# takes command through microphone
+# Capture Voice takes command through microphone
 def takecommand():
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -77,8 +75,7 @@ def takecommand():
     return query
 
 
-# Input from user
-# Make input to lowercase
+# Input from user Make input to lowercase
 query = takecommand()
 while (query == "None"):
     query = takecommand()
@@ -89,8 +86,7 @@ def destination_language():
 	want to convert : Ex. Hindi , English , etc.")
     print()
 
-    # Input destination language in
-    # which the user wants to translate
+    # Input destination language in which the user wants to translate
     to_lang = takecommand()
     while (to_lang == "None"):
         to_lang = takecommand()
